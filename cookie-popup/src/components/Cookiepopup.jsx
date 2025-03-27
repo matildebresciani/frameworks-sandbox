@@ -1,11 +1,11 @@
-import { MdOutlineCookie } from "react-icons/md";
+import { LiaCookieBiteSolid } from "react-icons/lia";
 import { RxCross2 } from "react-icons/rx";
 
 const CookiePopUp = () => {
     return ( 
         <div className="cookie-popup">
             <div>
-                <MdOutlineCookie style={{ fontSize: "32px" }}/>
+                <LiaCookieBiteSolid style={{ fontSize: "32px" }}/>
                 <RxCross2 style={{ fontSize: "15px", cursor: "pointer" }}/>
             </div>
             <div>

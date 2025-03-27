@@ -20,7 +20,49 @@
 }
 
 body {
-  background: var(--background);
+  background-color: #B6CCDA;
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  padding: 1rem;
+
+  .icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    font-size: 24px;
+  }
+
+  nav > ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: space-between;
+    width: 640px;
+
+    li {
+
+      a {
+        font-weight: bold;
+      }
+      a.active {
+        background-color: white;
+        color: #B6CCDA;
+        padding: 1rem;
+        border-radius: 30px;
+      }
+    
+    }
+  }
+
+
+}
+
