@@ -1,6 +1,6 @@
 import Button from "@/components/Button";
 import PageIndicator from "@/components/Pageindicator";
-import Gallery from "@/components/Gallery";
+import Gallery from "@/components/gallery/Gallery";
 
 export default function Home() {
   return (

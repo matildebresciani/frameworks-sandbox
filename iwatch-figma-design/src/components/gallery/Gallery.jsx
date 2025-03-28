@@ -5,6 +5,7 @@ import Image from "next/image";
 import navyWatch from "@/img/navy.png"
 import mintWatch from "@/img/mint.png"
 import oceanWatch from "@/img/ocean.png"
+import ColorDot from "./ColorDot";
 import { useState } from "react";
 
 const Gallery = () => {
@@ -15,20 +16,24 @@ const Gallery = () => {
     <Image src={activeImg} alt="Watch"/>
 </div>
 <div className="color-selector">
-    <div
-    className={activeImg === navyWatch ? "active" : ""}
-    onClick={() => setActiveImg(navyWatch)}
-    style={{backgroundColor: "#434558"}}></div>
+    <ColorDot
+    watchColor={navyWatch}
+    colorVariable={"var(--watch-color1)"}
+    activeImg={activeImg}
+    setActiveImg={setActiveImg}
+    />
     <TbLineDotted style={{ transform: "rotate(90deg)" }} />
-    <div
-    className={activeImg === mintWatch ? "active" : ""}
-    onClick={() => setActiveImg(mintWatch)}
-     style={{backgroundColor: "#6ADDCC"}}></div>
+    <ColorDot
+    watchColor={mintWatch}
+    colorVariable={"var(--watch-color2)"}
+    activeImg={activeImg}
+    setActiveImg={setActiveImg}/>
     <TbLineDotted style={{ transform: "rotate(90deg)" }} />
-    <div
-    className={activeImg === oceanWatch ? "active" : ""}
-    onClick={() => setActiveImg(oceanWatch)}
-    style={{backgroundColor: "#def3f6"}}></div>
+    <ColorDot
+    watchColor={oceanWatch}
+    colorVariable={"var(--watch-color3)"}
+    activeImg={activeImg}
+    setActiveImg={setActiveImg}/>
 </div>
 <div className="watch-gallery">
     <figure
