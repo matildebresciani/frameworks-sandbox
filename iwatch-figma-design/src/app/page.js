@@ -1,9 +1,19 @@
-import Header from "@/components/header/Header";
+import Button from "@/components/Button";
+import PageIndicator from "@/components/Pageindicator";
+import Gallery from "@/components/Gallery";
 
 export default function Home() {
   return (
-    <div>
-      <Header />
-    </div>
+    <main>
+      <div className="landing-page-left">
+        <div>
+          <h1>The Perfect Moment</h1>
+          <h2>Between Past And Future.</h2>
+        </div>
+        <Button label="Buy Now" />
+        <PageIndicator />
+      </div>
+      <Gallery />
+    </main>
   );
 }

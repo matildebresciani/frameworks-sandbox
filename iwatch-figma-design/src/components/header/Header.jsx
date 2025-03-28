@@ -10,6 +10,7 @@ const Header = () => {
             <Navigation/>
             <div className="icons">
             <CiSearch/>
+            <span>|</span>
             <FiShoppingBag/>
             </div>
         </header>
