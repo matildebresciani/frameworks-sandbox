@@ -1,7 +1,8 @@
 const NavButton = (props) => {
     return ( 
         <li>
-            <a href="">{props.label}</a>
+            <a className={props.label === "iWatch" ? "active" : ""}
+             href="">{props.label}</a>
         </li>
      );
 }
