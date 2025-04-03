@@ -24,8 +24,8 @@
 }
 
 body {
-  background-color: var(--primary-color);
-  display: grid;
+  /* background-color: var(--primary-color);
+  display: grid; */
   grid-template-columns: 1fr [content]minmax(0, 1200px) 1fr;
   font-family: "Poppins", sans-serif;
 }
