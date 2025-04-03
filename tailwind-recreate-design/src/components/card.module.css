@@ -1,0 +1,8 @@
+.Card {
+    /* almindelig CSS */
+    background-color: red;
+}
+
+.Card h2 {
+    color: blue;
+}
